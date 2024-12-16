@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbarisWebValidator.SampleWebValidator.WCF", "AbarisWebValidator.SampleWebValidator.WindowsCommunicationFoundation\AbarisWebValidator.SampleWebValidator.WCF.csproj", "{94A41935-9241-435D-BC45-88809FD76665}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{07279B8D-533B-45FA-BDEE-33B36F152F4F}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
@@ -16,16 +14,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbarisWebValidator.SampleWe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbarisWebValidator.SampleWebValidator", "AbarisWebValidator.SampleWebValidator\AbarisWebValidator.SampleWebValidator.csproj", "{F6139FF7-CF42-4D5A-8DFE-8A5C471A9A4F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbarisWebValidator.SampleWebValidator.WCF", "AbarisWebValidator.SampleWebValidator.WCF\AbarisWebValidator.SampleWebValidator.WCF.csproj", "{E727BD86-5297-4CC6-8FA3-747646359C52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94A41935-9241-435D-BC45-88809FD76665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94A41935-9241-435D-BC45-88809FD76665}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94A41935-9241-435D-BC45-88809FD76665}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94A41935-9241-435D-BC45-88809FD76665}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2131341C-9FE1-48CB-82E9-10860B7606E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2131341C-9FE1-48CB-82E9-10860B7606E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2131341C-9FE1-48CB-82E9-10860B7606E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,6 +30,10 @@ Global
 		{F6139FF7-CF42-4D5A-8DFE-8A5C471A9A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6139FF7-CF42-4D5A-8DFE-8A5C471A9A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6139FF7-CF42-4D5A-8DFE-8A5C471A9A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E727BD86-5297-4CC6-8FA3-747646359C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E727BD86-5297-4CC6-8FA3-747646359C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E727BD86-5297-4CC6-8FA3-747646359C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E727BD86-5297-4CC6-8FA3-747646359C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
