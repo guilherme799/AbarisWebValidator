@@ -10,6 +10,6 @@ namespace AbarisWebValidator.SampleWebValidator.Domain
     {
         [OperationContract]
         [WebGet(UriTemplate = "/getData_Banco?ID={id}")]
-        public IEnumerable<IEnumerable<IndiceValor>> GetData_Banco(string id);
+        List<List<IndiceValor>> GetData_Banco(string id);
     }
 }

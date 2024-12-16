@@ -2,24 +2,23 @@
 using AbarisWebValidator.SampleWebValidator.Models;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace AbarisWebValidator.SampleWebValidator.Application.Services
 {
     public class WebValidatorService : IWebvalidatorService
     {
-        public IEnumerable<IEnumerable<IndiceValor>> GetData_Banco(string id)
+        public List<List<IndiceValor>> GetData_Banco(string id)
         {
             var arrayOfIndices = new List<List<IndiceValor>>();
 
             for (var i = 0; i < 10; i++)
             {
-                arrayOfIndices.Add(new()
+                arrayOfIndices.Add(new List<IndiceValor>()
                 {
-                    new() { indice = "Matrícula", valor = id },
-                    new() { indice = "CPF", valor = GenerateRandomCpf() },
-                    new() { indice = "Nome", valor = GenerateRandomName(6) },
-                    new() { indice = "Estado", valor = i % 2 == 0 ? "Minas Gerais":"São Paulo" }
+                    new IndiceValor() { indice = "Matrícula", valor = id },
+                    new IndiceValor() { indice = "CPF", valor = GenerateRandomCpf() },
+                    new IndiceValor() { indice = "Nome", valor = GenerateRandomName(6) },
+                    new IndiceValor() { indice = "Estado", valor = i % 2 == 0 ? "Minas Gerais":"São Paulo" }
                 });
             }
 
