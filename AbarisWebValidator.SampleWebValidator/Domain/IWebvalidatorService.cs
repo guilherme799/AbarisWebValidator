@@ -6,6 +6,7 @@ using System.Collections.Generic;
 namespace AbarisWebValidator.SampleWebValidator.Domain
 {
     [ServiceContract]
+    [ServiceKnownType(typeof(IndiceValor))]
     public interface IWebvalidatorService
     {
         [OperationContract]
